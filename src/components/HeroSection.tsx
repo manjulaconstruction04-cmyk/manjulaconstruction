@@ -114,6 +114,8 @@ export default function HeroSection({ onOpenConsultation, onOpenMagazine }: Hero
               <img
                 src={heroSlides[currentSlide].image}
                 alt={heroSlides[currentSlide].mainTitle}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
 
@@ -129,12 +131,14 @@ export default function HeroSection({ onOpenConsultation, onOpenMagazine }: Hero
               <div className="absolute bottom-6 right-6 z-20 flex items-center gap-2">
                 <button
                   onClick={() => setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length)}
+                  aria-label="Previous Slide"
                   className="w-10 h-10 bg-[#11161d] text-[#f5b120] border border-slate-700 hover:border-[#f5b120] flex items-center justify-center transition-colors"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
                 <button
                   onClick={() => setCurrentSlide((prev) => (prev + 1) % heroSlides.length)}
+                  aria-label="Next Slide"
                   className="w-10 h-10 bg-[#11161d] text-[#f5b120] border border-slate-700 hover:border-[#f5b120] flex items-center justify-center transition-colors"
                 >
                   <ChevronRight className="w-5 h-5" />
@@ -147,6 +151,7 @@ export default function HeroSection({ onOpenConsultation, onOpenMagazine }: Hero
                   <button
                     key={idx}
                     onClick={() => setCurrentSlide(idx)}
+                    aria-label={`Go to slide ${idx + 1}`}
                     className={`h-2 rounded-full transition-all ${
                       currentSlide === idx ? 'w-8 bg-[#f5b120]' : 'w-2 bg-white/50'
                     }`}

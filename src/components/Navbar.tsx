@@ -57,10 +57,10 @@ export default function Navbar({ onOpenConsultation, onOpenMagazine }: NavbarPro
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4">
             <div className="flex items-center gap-3 text-slate-400">
-              <a href="#" className="hover:text-[#f5b120] transition-colors"><Globe className="w-3.5 h-3.5" /></a>
-              <a href="#" className="hover:text-[#f5b120] transition-colors"><Share2 className="w-3.5 h-3.5" /></a>
+              <a href="#" aria-label="Visit Website" className="hover:text-[#f5b120] transition-colors"><Globe className="w-3.5 h-3.5" /></a>
+              <a href="#" aria-label="Share Website" className="hover:text-[#f5b120] transition-colors"><Share2 className="w-3.5 h-3.5" /></a>
             </div>
             {onOpenMagazine && (
               <button
@@ -136,6 +136,7 @@ export default function Navbar({ onOpenConsultation, onOpenMagazine }: NavbarPro
 
               <button
                 onClick={onOpenConsultation}
+                aria-label="Search site"
                 className="w-10 h-10 bg-[#f5b120] text-[#11161d] font-bold flex items-center justify-center hover:bg-[#11161d] hover:text-[#f5b120] transition-colors"
                 title="Search"
               >
@@ -147,12 +148,12 @@ export default function Navbar({ onOpenConsultation, onOpenMagazine }: NavbarPro
             <div className="lg:hidden flex items-center gap-2">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label="Toggle navigation menu"
                 className="w-10 h-10 bg-[#11161d] text-[#f5b120] flex items-center justify-center rounded"
-                aria-label="Toggle Menu"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
-            </div>
+            </div>v>
 
           </div>
         </div>
