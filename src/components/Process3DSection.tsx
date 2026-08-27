@@ -8,7 +8,7 @@ export default function Process3DSection() {
   const [selectedStep, setSelectedStep] = useState<number>(0);
   const currentStage: ConstructionStage = WORKFLOW_STAGES[selectedStep];
 
-  const getValidImageUrl = (url: string) => {
+  const getValidImageUrl = (url?: string) => {
     if (!url || url.includes('step1.jpg')) {
       return '/about_site.jpg';
     }

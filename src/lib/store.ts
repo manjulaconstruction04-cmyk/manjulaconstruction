@@ -33,6 +33,8 @@ class DataStoreService {
   private services: Service[] = [...INITIAL_SERVICES];
   private blogPosts: BlogPost[] = [...INITIAL_BLOG_POSTS];
   private companyInfo = { ...COMPANY_INFO };
+  private magazineDownloads = 48;
+  private websiteVisits = 1250;
   private adminCredentials = {
     email: 'manjulaconstruction04@gmail.com',
     password: 'manjula2026'
