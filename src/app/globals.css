@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #212529;
+  --cz-yellow: #f5b120;
+  --cz-yellow-dark: #d99a14;
+  --cz-dark: #11161d;
+  --cz-dark-card: #1a1f26;
+  --cz-gray-light: #f8f9fa;
+  --cz-border: #e9ecef;
+}
+
+body {
+  background-color: #ffffff;
+  color: #212529;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom ConstructZilla Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11161d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f5b120;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d99a14;
+}
+
+/* ConstructZilla Signature Heading Underline */
+.cz-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.cz-heading-underline {
+  position: relative;
+  width: 120px;
+  height: 2px;
+  background-color: #f5b120;
+  margin-top: 12px;
+}
+
+.cz-heading-underline::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 8px;
+  background-color: #11161d;
+  border: 2px solid #f5b120;
+}
+
+.cz-heading-underline-left {
+  position: relative;
+  width: 100px;
+  height: 2px;
+  background-color: #f5b120;
+  margin-top: 10px;
+}
+
+.cz-heading-underline-left::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 7px;
+  background-color: #11161d;
+  border: 2px solid #f5b120;
+}
+
+/* ConstructZilla Skewed Buttons */
+.cz-btn-skew {
+  transform: skewX(-12deg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.cz-btn-skew > * {
+  transform: skewX(12deg);
+}
+
+.cz-btn-yellow {
+  background-color: #f5b120;
+  color: #11161d;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid #f5b120;
+}
+
+.cz-btn-yellow:hover {
+  background-color: #11161d;
+  color: #f5b120;
+}
+
+.cz-btn-dark {
+  background-color: #11161d;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid #11161d;
+}
+
+.cz-btn-dark:hover {
+  background-color: #f5b120;
+  color: #11161d;
+  border-color: #f5b120;
+}
+
+.cz-btn-outline {
+  background-color: transparent;
+  color: #11161d;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid #11161d;
+}
+
+.cz-btn-outline:hover {
+  background-color: #11161d;
+  color: #f5b120;
+}
+
+/* ConstructZilla Hazard Stripe Divider */
+.cz-hazard-stripe {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f5b120,
+    #f5b120 15px,
+    #11161d 15px,
+    #11161d 30px
+  );
+  height: 8px;
+  width: 100%;
+}
+
+/* ConstructZilla Glass & Card Utilities */
+.cz-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.cz-card:hover {
+  border-color: #f5b120;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(245, 177, 32, 0.15);
+}
+
+.cz-card-dark {
+  background: #1a1f26;
+  border: 1px solid rgba(245, 177, 32, 0.2);
+  color: #ffffff;
+}
+
+/* Metallic Shimmer Animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-effect {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(245,177,32,0.2) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
