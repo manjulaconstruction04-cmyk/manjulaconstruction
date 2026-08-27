@@ -94,18 +94,18 @@ export default function Navbar({ onOpenConsultation, onOpenMagazine }: NavbarPro
           <div className="flex items-center justify-between">
             
             {/* BRAND LOGO OVERLAPPING BADGE */}
-            <Link href="/" className="flex items-center gap-3 group relative z-10 shrink-0">
-              <div className="bg-[#11161d] text-white px-3 py-1.5 rounded-xl border border-[#f5b120]/40 shadow-xl flex items-center gap-2.5 group-hover:bg-[#1a1f26] transition-colors">
+            <Link href="/" className="flex items-center gap-2 sm:gap-3 group relative z-10 shrink-0">
+              <div className="bg-[#11161d] text-white px-2.5 sm:px-3 py-1.5 rounded-xl border border-[#f5b120]/40 shadow-xl flex items-center gap-2 sm:gap-2.5 group-hover:bg-[#1a1f26] transition-colors">
                 <img
                   src="/logo.png"
                   alt="Manjula Construction Logo"
-                  className="h-10 w-auto object-contain shrink-0 drop-shadow-md"
+                  className="h-8 sm:h-10 w-auto object-contain shrink-0 drop-shadow-md"
                 />
-                <div className="hidden sm:block">
-                  <div className="font-extrabold text-base tracking-wider font-serif text-white flex items-center gap-1 leading-tight">
+                <div className="block">
+                  <div className="font-extrabold text-xs sm:text-base tracking-wider font-serif text-white flex items-center gap-1 leading-tight">
                     MANJULA <span className="text-[#f5b120]">CONSTRUCTION</span>
                   </div>
-                  <p className="text-[9px] text-[#f5b120] uppercase font-mono font-bold tracking-widest leading-none mt-0.5">
+                  <p className="text-[7px] sm:text-[9px] text-[#f5b120] uppercase font-mono font-bold tracking-widest leading-none mt-0.5 whitespace-nowrap">
                     BUILDING DREAMS • CREATING FUTURES
                   </p>
                 </div>
