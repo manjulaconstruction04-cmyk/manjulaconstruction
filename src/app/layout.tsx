@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.manjulaconstruction.com"),
   title: "Manjula Construction | Top Civil Engineers & Luxury House Builders in Coimbatore",
-  description: "Manjula Construction is the leading turnkey residential & commercial construction company in Coimbatore, South India. 20+ Years Experience, 500+ Delivered Projects, Vastu Compliant Architectural Planning.",
+  description: "Manjula Construction is the leading turnkey residential & commercial construction company in Coimbatore, South India. 20+ Years Experience, 50+ Delivered Projects, Vastu Compliant Architectural Planning.",
   keywords: [
     "Manjula Construction",
     "Construction Company in Coimbatore",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Manjula Construction | Turnkey Residential & Commercial Builders",
-    description: "20+ Years Experience • 500+ Delivered Projects • 10-Stage Quality Audit • Tata Steel & UltraTech Cement",
+    description: "20+ Years Experience • 50+ Delivered Projects • 10-Stage Quality Audit • Tata Steel & UltraTech Cement",
     url: "https://www.manjulaconstruction.com",
     siteName: "Manjula Construction",
     images: [{ url: "/logo.png", width: 800, height: 600, alt: "Manjula Construction Logo" }],

@@ -35,7 +35,7 @@ export default function TestimonialsSection() {
           </h2>
           <div className="cz-heading-underline" />
           <p className="text-sm text-slate-300 max-w-2xl mt-4 leading-relaxed">
-            Over 500+ happy families and business owners trust Manjula Construction for zero-escalation turnkey building delivery across South India.
+            Over 50+ happy families and business owners trust Manjula Construction for zero-escalation turnkey building delivery across South India.
           </p>
         </div>
 

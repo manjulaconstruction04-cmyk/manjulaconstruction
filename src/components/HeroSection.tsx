@@ -25,7 +25,7 @@ export default function HeroSection({ onOpenConsultation, onOpenMagazine }: Hero
       highlightTitle: "FOR YOUR PROJECT",
       subtitle: "100% Fixed BOQ Price • Tata Steel & UltraTech Cement",
       image: "/hero2.jpg",
-      badge: "500+ Delivered Projects"
+      badge: "50+ Delivered Projects"
     },
     {
       mainTitle: "LEADER IN THE",

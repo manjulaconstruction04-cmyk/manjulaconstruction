@@ -153,7 +153,7 @@ export default function Navbar({ onOpenConsultation, onOpenMagazine }: NavbarPro
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
-            </div>v>
+            </div>
 
           </div>
         </div>
